@@ -1,5 +1,5 @@
 - name: create web play
-  hosts: localhost
+  hosts: webserver
   become: true
   tasks:
           - name: install httpd
