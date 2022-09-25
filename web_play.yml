@@ -1,0 +1,8 @@
+- name: create web play
+  hosts: localhost
+  become: true
+  tasks:
+          - name: install httpd
+            yum:
+                    name: haproxy
+                    state: installed
